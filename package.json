@@ -4,7 +4,9 @@
   "description": "Just making a block explorer to get better at web3 and React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app-dev": "npm run bundle-dev && ts-node api/server.ts",
+    "bundle-dev": "./node_modules/.bin/webpack --mode development --display-error-details",
+    "test": "ts-mocha -p tsconfig.json test/*.spec.ts"
   },
   "author": "",
   "license": "ISC",

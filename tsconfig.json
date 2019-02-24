@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "jsx": "react"
+    },
+    "include": [
+        "server/*",
+        "browser/*"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}
